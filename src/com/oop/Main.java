@@ -7,7 +7,7 @@ public class Main {
         System.out.println(salary.pay(3, 45));
 
         Employee employee1 = new Employee("Karina", "Zaporozhets");
-        System.out.println(employee1.name + " " + employee1.surname + " " + employee1.ID);
+        System.out.println("The first employee " + employee1.name + " " + employee1.surname + " " + employee1.ID);
 
         Employee employee2 = new Employee();
         employee2.setName("Ganna");
