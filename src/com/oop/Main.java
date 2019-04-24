@@ -18,8 +18,8 @@ public class Main {
         for (int suit = Card.DIAMONDS; suit <= Card.SPADES; suit++) {
             for (int rank = Card.ACE; rank <= Card.KING; rank++) {
                 Card card = deck.getCard(suit, rank);
-                System.out.println(card.rankToString(card.getRank()) + " " +card.suitToString(card.getSuit()));
+                System.out.println(Card.rankToString(card.getRank()) + " " + Card.suitToString(card.getSuit()));
             }
         }
     }
-    }
+}
