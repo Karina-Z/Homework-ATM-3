@@ -1,6 +1,7 @@
 package com.oop;
 
 public class Card {
+
     private final int rank;
     private final int suit;
 
@@ -24,12 +25,14 @@ public class Card {
     public final static int KING = 13;
 
     public Card(int rank, int suit) {
-        if (DIAMONDS <= suit && suit <= SPADES)
-            throw new IllegalArgumentException("Illegal playing card suit");
-        if (ACE <= rank && rank <= KING)
-            throw new IllegalArgumentException("Illegal playing card value");
         this.rank = rank;
         this.suit = suit;
+        if (DIAMONDS < suit && suit > SPADES) {
+            throw new IllegalArgumentException("Illegal playing card suit");
+        }
+        if (ACE < rank && rank > KING) {
+            throw new IllegalArgumentException("Illegal playing card value");
+        }
     }
 
     public int getSuit() {
